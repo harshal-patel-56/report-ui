@@ -1,56 +1,48 @@
 <template>
   <v-app>
     <v-app-bar
-      app
-      color="primary"
-      dark
+        app
+        light
     >
-      <div class="d-flex align-center">
+      <div>
         <v-img
-          alt="Vuetify Logo"
-          class="shrink mr-2"
-          contain
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-logo-dark.png"
-          transition="scale-transition"
-          width="40"
-        />
-
-        <v-img
-          alt="Vuetify Name"
-          class="shrink mt-1 hidden-sm-and-down"
-          contain
-          min-width="100"
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-name-dark.png"
-          width="100"
-        />
+            alt="Logo"
+            class="shrink mr-2"
+            src="https://www.truist.com/content/dam/truist/us/en/logos/truist-logo.png"
+            transition="scale-transition"
+            width="100"
+        >
+        </v-img>
+      </div>
+      <v-divider vertical class="mx-2"></v-divider>
+      <div class="ml-2">
+        <span style="color: #7c6992; font-size: 1.25rem; font-weight: bold">REPORTING APP</span>
       </div>
 
       <v-spacer></v-spacer>
 
       <v-btn
-        href="https://github.com/vuetifyjs/vuetify/releases/latest"
-        target="_blank"
-        text
+       outlined
       >
-        <span class="mr-2">Latest Release</span>
-        <v-icon>mdi-open-in-new</v-icon>
+        Sign Out
       </v-btn>
+
     </v-app-bar>
 
     <v-main>
-      <HelloWorld/>
+      <LoginForm/>
     </v-main>
   </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld';
+import LoginForm from "@/components/LoginForm";
 
 export default {
   name: 'App',
 
   components: {
-    HelloWorld,
+    LoginForm,
   },
 
   data: () => ({
