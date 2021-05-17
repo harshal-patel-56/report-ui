@@ -30,6 +30,7 @@
     </v-app-bar>
 
     <v-main>
+      <GenerateReport/>
       <LoginForm/>
     </v-main>
   </v-app>
@@ -37,11 +38,13 @@
 
 <script>
 import LoginForm from "@/components/LoginForm";
+import GenerateReport from "@/components/GenerateReport";
 
 export default {
   name: 'App',
 
   components: {
+    GenerateReport,
     LoginForm,
   },
 
